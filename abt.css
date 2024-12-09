@@ -1,67 +1,64 @@
 body {
-    height: 1000px;
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.myinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.abt-me {
+    color: darkred;
+    text-align: center;
+    margin: 0;
 }
 
 .sticky {
     position: sticky;
-    width: 825px;
     top: 0;
     background-color: darkred;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-weight: bold;
     z-index: 100;
     color: blanchedalmond;
-    font-size: larger;
+    font-size: 1.2rem;
 }
-.all {
-    width: 800px;
-    height: 500px;
-    border: 2px;
-    border-style: solid;
-    border-color: darkred;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fef0de;
 
-}
-.hobby {
-    
-    width: 300px;
-    height: 200px;
-    border: 2px;
-    border-style: solid;
-    background-color: blanchedalmond;
-    color: darkred;
+.all {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    background-color: #fef0de;
+    border: 2px solid darkred;
+    margin-top: 20px;
 }
-.like {
-    width: 300px;
-    height: 200px;
-    border: 2px;
-    border-style: solid;
+
+.hobby, .like {
     background-color: blanchedalmond;
+    border: 2px solid darkred;
+    padding: 15px;
     color: darkred;
 }
-.hobimg {
-    width: 300px;
-    height: 200px;
-    
-}
-.likepic {
-    width: 300px;
-    height: 200px;
-}
-.hob {
+
+.hob, .li {
     text-align: center;
+    margin-top: 0;
 }
-.li {
-    text-align: center;
-}
-.abt-me {
-    color: darkred;
+
+.hobimg, .likepic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
 }
