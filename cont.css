@@ -1,0 +1,24 @@
+.sticky {
+    position: sticky;
+    width: 965px;
+    top: 0;
+    background-color: darkred;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+    color: blanchedalmond;
+}
+.all {
+    width: 800px;
+    height: 500px;
+    border: 2px;
+    border-style: solid;
+    border-color: darkred;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 90px;
+    background-color: blanchedalmond;
+}

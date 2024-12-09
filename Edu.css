@@ -1,0 +1,48 @@
+body {
+    height: 1000px;
+}
+.sticky {
+    position: sticky;
+    width: 825px;
+    top: 0;
+    background-color: darkred;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+    color: blanchedalmond;
+}
+.Bura {
+    width: 300px;
+    height: 300px;
+}
+.Bang1 {
+    width: 300px;
+    height: 300px;
+}
+.Bang2 {
+    width: 300px;
+    height: 300px;
+}
+.all {
+    
+    justify-items: center;
+}
+.ก่อน {
+    color: palevioletred;
+}
+.ก่อน2 {
+    color: #a7a702;
+}
+.ต้น {
+    color: palevioletred;
+}
+.ต้น2 {
+    color: green;
+}
+.ปลาย {
+    color: palevioletred;
+}
+.ปลาย2 {
+    color: green;
+}
