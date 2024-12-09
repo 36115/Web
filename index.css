@@ -1,108 +1,75 @@
 .Menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-    top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.mnitem, .mnitem2, .mnitem3 {
+  border: 10px solid burlywood;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  padding: 1rem;
+  aspect-ratio: 1;
+  width: 100%;
+  height: auto;
+}
+
+.Bar {
+  background-color: darkred;
+  border: 1px solid rgb(139, 0, 0);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.Eclaire {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
+}
+
+.end {
+  background-color: darkred;
+  border: 1px solid rgb(139, 0, 0);
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.me, .edu, .cont {
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  background-color: #ed1111;
+  border: 2px solid darkred;
+  padding: 0.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.me:hover, .edu:hover, .cont:hover {
+  background-color: #d10f0f;
+}
+
+@media (max-width: 768px) {
+  .Menu, .button {
+    grid-template-columns: 1fr;
   }
   
-  .mnitem {
-    display: inline;
-    border-style: solid;
-    border-color: burlywood;
-    border-width: 10px;
-    background-color: blanchedalmond;
-    width: 410px;
-    height: 410px;
-    padding: 10px;
-    border-radius: 10px;
+  .me, .edu, .cont {
+    font-size: 3rem;
   }
-  .mnitem2 {
-    display: inline;
-    border-style: solid;
-    border-color: burlywood;
-    border-width: 10px;
-  
-    background-color: blanchedalmond;
-    width: 410px;
-    height: 410px;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .mnitem3 {
-    display: inline;
-    border-style: solid;
-    border-color: burlywood;
-    border-width: 10px;
-    background-color: blanchedalmond;
-    width: 410px;
-    height: 410px;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .Bar {
-    display: flex;
-    border-style: solid;
-    border-color: rgb(139, 0, 0);
-    background-color: darkred;
-    width: 100vw;
-    height: 60px;
-    position: sticky;
-  }
-  
-  .Eclaire {
-    font-size: 50px;
-    font-family: "Courier New", Courier, monospace;
-    color: aliceblue;
-  }
-  
-  .end {
-    border-style: solid;
-    border-color: rgb(139, 0, 0);
-    background-color: darkred;
-    width: 100vw;
-    height: 60px;
-    position: relative;
-    top: 400px;
-  }
-  
-  .button {
-    display: flex;
-    position: relative;
-    top: 300px;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  .me {
-    font-size: 80px;
-    font-family: "Courier New", Courier, monospace;
-    color: black;
-    border-style: solid;
-    background-color:#ed1111;
-    border-color: darkred;
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  .edu {
-    font-size: 80px;
-    font-family: "Courier New", Courier, monospace;
-    color: black;
-    border-style: solid;
-    background-color: #ed1111;
-    border-color: darkred;
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  .cont {
-    font-size: 80px;
-    font-family: "Courier New", Courier, monospace;
-    color: black;
-    border-style: solid;
-    background-color: #ed1111;
-    border-color: darkred;
-    padding: 10px;
-    border-radius: 15px;
-  }
+}
