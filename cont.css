@@ -1,24 +1,47 @@
 .sticky {
     position: sticky;
-    width: 965px;
     top: 0;
+    width: 100%;
+    max-width: 965px;
+    margin: 0 auto;
     background-color: darkred;
     padding: 10px;
     text-align: center;
     font-weight: bold;
     z-index: 100;
     color: blanchedalmond;
+    box-sizing: border-box;
 }
+
 .all {
-    width: 800px;
-    height: 500px;
-    border: 2px;
-    border-style: solid;
-    border-color: darkred;
-    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid darkred;
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    padding: 90px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
     background-color: blanchedalmond;
+    text-align: center;
+}
+
+.ig-pic, .Face-pic {
+    width: 220px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.ig a, .facebook a {
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .all {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 }
