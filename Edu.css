@@ -3,7 +3,6 @@ body {
 }
 .sticky {
     position: sticky;
-    width: 825px;
     top: 0;
     background-color: darkred;
     padding: 10px;
